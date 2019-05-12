@@ -10,9 +10,10 @@ import videoRouter from "./routers/videoRouter";
 
 import routes from "./routes";
 
-const app = express();;
+const app = express();
 
-app.set("view engine", "pug");app.use(cookieParser());
+app.set("view engine", "pug");
+app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
